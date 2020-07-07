@@ -1,0 +1,24 @@
+
+エラーメッセージが表示されなかった。ドキュメント調べたら一発で答えがあった
+正
+@foreach ($errors->all() as $error)
+<li>{{ $error }}</li>
+@endforeach
+
+ミス。
+@foreach ($errors as $error)
+<li>{{ $error }</li>
+@endforeach
+
+npm install エラーになる。
+sassが使えない
+
+Controller function 中のTodo::getのTodoはどこから来てるのか.DBからの呼び出し方
+withとは
+
+正しいページに飛ばなかった。Navbar.blade
+
+正
+<a class="nav-link " href="/todo/create">Create</a>
+ミス。
+<a class="nav-link " href="todo/create">Create</a>
